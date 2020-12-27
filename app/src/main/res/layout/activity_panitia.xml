@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PanitiaActivity">
+
+    <ImageButton
+        android:id="@+id/btnBackPanitia"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/back" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@id/btnBackPanitia"
+        android:id="@+id/judul"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Event's Committee"
+        android:textAlignment="viewStart"
+        android:textColor="#000000"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/judul"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Start with choosing one of the categories below"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/btnInti"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/desc"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/inti"
+        android:layout_marginTop="55dp"
+        android:layout_marginLeft="65dp"
+        android:background="@android:color/transparent"/>
+
+    <ImageButton
+        android:id="@+id/btnAnggota"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerInside"
+        android:layout_below="@+id/desc"
+        android:layout_toRightOf="@+id/btnInti"
+        android:layout_marginTop="55dp"
+        android:layout_marginLeft="55dp"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/anggota" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Core Committee"
+        android:id="@+id/tvInti"
+        android:layout_below="@+id/btnInti"
+        android:fontFamily="@font/montserrat_bold"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="45dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnAnggota"
+        android:layout_marginLeft="72dp"
+        android:layout_marginTop="33dp"
+        android:layout_toRightOf="@+id/tvInti"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Division"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="3dp"
+    app:cardCornerRadius="3dp"
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="@color/white"
+    app:contentPadding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayoutDivisi"
+        android:layout_gravity="center_vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+                <TextView
+                    android:text="Nama Divisi: "
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"/>
+                <TextView
+                    android:id="@+id/NamaDivisiList"
+                    android:fontFamily="@font/montserrat"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Divisi"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Nama Coordinator: "
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"/>
+                <TextView
+                    android:id="@+id/NamaKoordinatorList"
+                    android:fontFamily="@font/montserrat"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Coordinator"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Jumlah Anggota: "
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"/>
+                <TextView
+                    android:id="@+id/JumlahAnggotaList"
+                    android:fontFamily="@font/montserrat"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jumlah Anggota"/>
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

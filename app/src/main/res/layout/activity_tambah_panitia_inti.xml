@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TambahPanitiaIntiActivity">
+
+    <ImageButton
+        android:id="@+id/btnBackPanitiaInti"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/back" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@id/btnBackPanitiaInti"
+        android:id="@+id/judul"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Add Committee"
+        android:textAlignment="viewStart"
+        android:textColor="#000000"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btnSimpanPanitiaInti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/judul"
+        android:layout_marginLeft="30sp"
+        android:layout_marginTop="10sp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="SAVE"
+        android:textSize="12dp" />
+
+    <Button
+        android:id="@+id/btnBatalPanitiaInti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/judul"
+        android:layout_marginLeft="30sp"
+        android:layout_marginTop="10sp"
+        android:layout_toRightOf="@+id/btnSimpanPanitiaInti"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="@android:color/holo_red_light"
+        android:text="CANCEL"
+        android:textSize="12dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btnSimpanPanitiaInti"
+        android:id="@+id/ScrollViewTambah"
+        android:layout_marginTop="15sp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/txViewNamaKetua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:textSize="12dp"
+                android:layout_marginLeft="10dp"
+                android:text="Ketua"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:ems="10"
+                android:layout_marginTop="5sp"
+                android:textSize="12dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:hint="Nama Ketua"
+                android:id="@+id/NamaKetua"
+                android:layout_below="@+id/txViewNamaKetua"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_below="@+id/NamaKetua"
+                android:text="Wakil Ketua"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="12dp"
+                android:textColor="@color/black"
+                android:id="@+id/txViewNamaWakil"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:ems="10"
+                android:layout_below="@+id/txViewNamaWakil"
+                android:hint="Tanggal Pelaksanaan"
+                android:textSize="12dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5sp"
+                android:textColor="@color/black"
+                android:id="@+id/NamaWakil"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_below="@+id/NamaWakil"
+                android:id="@+id/txViewSekretaris"
+                android:text="Sekretaris"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="12dp"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_below="@+id/txViewSekretaris"
+                android:id="@+id/NamaSekretaris"
+                android:layout_marginTop="5sp"
+                android:layout_marginLeft="10dp"
+                android:hint="Nama Sekretaris"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@color/black"
+                android:textSize="12dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/NamaSekretaris"
+                android:id="@+id/txViewBendahara"
+                android:text="Nama Bendahara"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:textSize="12dp"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txViewBendahara"
+                android:ems="10"
+                android:id="@+id/NamaBendahara"
+                android:hint="Nama Bendahara"
+                android:fontFamily="@font/montserrat"
+                android:textSize="12dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/black"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

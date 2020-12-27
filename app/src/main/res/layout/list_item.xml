@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="3dp"
+    app:cardCornerRadius="3dp"
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="@color/white"
+    app:contentPadding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout"
+        android:layout_gravity="center_vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+                <TextView
+                    android:text="Nama: "
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"/>
+                <TextView
+                    android:id="@+id/NamaAcaraList"
+                    android:fontFamily="@font/montserrat"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Acara"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Tgl. Pelaksanaan: "
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"/>
+                <TextView
+                    android:id="@+id/TanggalPelaksanaanList"
+                    android:fontFamily="@font/montserrat"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tanggal Pelaksanaan"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Tgl. Rapat Perdana: "
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"/>
+                <TextView
+                    android:id="@+id/TanggalRapatPerdanaList"
+                    android:fontFamily="@font/montserrat"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tgl. Rapat Perdana"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Tempat: "
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"/>
+                <TextView
+                    android:id="@+id/TempatPelaksanaanList"
+                    android:fontFamily="@font/montserrat"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lokasi"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Tmp. Rapat Perdana: "
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"/>
+                <TextView
+                    android:id="@+id/TempatRapatPerdanaList"
+                    android:fontFamily="@font/montserrat"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lokasi"/>
+            </TableRow>
+
+            <TextView
+                android:text="Deskripsi: "
+                android:fontFamily="@font/montserrat_bold"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"/>
+
+            <TextView
+                android:id="@+id/DeskripsiList"
+                android:fontFamily="@font/montserrat"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Deskripsi"/>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

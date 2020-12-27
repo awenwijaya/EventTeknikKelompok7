@@ -1,0 +1,7 @@
+#Sun Dec 27 21:09:51 SGT 2020
+base.0=C\:\\Users\\awenh\\Documents\\College Stuffs\\5th Semester MDI\\Pemrograman Mobile Lanjutan\\progmob fix\\tubes-progmob-event-teknik-master\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+path.1=classes.dex
+renamed.1=classes2.dex
+path.0=classes.dex
+renamed.0=classes.dex
+base.1=C\:\\Users\\awenh\\Documents\\College Stuffs\\5th Semester MDI\\Pemrograman Mobile Lanjutan\\progmob fix\\tubes-progmob-event-teknik-master\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\classes.dex

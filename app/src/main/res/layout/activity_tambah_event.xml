@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TambahEventActivity">
+
+    <ImageButton
+        android:id="@+id/btnBackTambah"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/back" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@id/btnBackTambah"
+        android:id="@+id/judul"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Add Event"
+        android:textAlignment="viewStart"
+        android:textColor="#000000"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btnSimpanTambah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/judul"
+        android:layout_marginLeft="30sp"
+        android:layout_marginTop="10sp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="SAVE"
+        android:textSize="12dp" />
+
+    <Button
+        android:id="@+id/btnBatalTambah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/judul"
+        android:layout_marginLeft="30sp"
+        android:layout_marginTop="10sp"
+        android:layout_toRightOf="@+id/btnSimpanTambah"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="@android:color/holo_red_light"
+        android:text="CANCEL"
+        android:textSize="12dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btnSimpanTambah"
+        android:id="@+id/ScrollViewTambah"
+        android:layout_marginTop="15sp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/txViewNamaAcara"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:textSize="12dp"
+                android:layout_marginLeft="10dp"
+                android:text="Nama Event"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:ems="10"
+                android:layout_marginTop="5sp"
+                android:textSize="12dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:hint="Nama Event"
+                android:id="@+id/NamaEventTambah"
+                android:layout_below="@+id/txViewNamaAcara"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_below="@+id/NamaEventTambah"
+                android:text="Tanggal Pelaksanaan"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="12dp"
+                android:textColor="@color/black"
+                android:id="@+id/txViewTanggalPelaksanaan"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:ems="10"
+                android:layout_below="@+id/txViewTanggalPelaksanaan"
+                android:hint="Tanggal Pelaksanaan"
+                android:textSize="12dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5sp"
+                android:textColor="@color/black"
+                android:id="@+id/TanggalPelaksanaanTambah"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_below="@+id/TanggalPelaksanaanTambah"
+                android:id="@+id/txViewTanggalRapatPerdana"
+                android:text="Tanggal Rapat Perdana"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="12dp"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_below="@+id/txViewTanggalRapatPerdana"
+                android:id="@+id/TanggalRapatPerdanaTambah"
+                android:layout_marginTop="5sp"
+                android:layout_marginLeft="10dp"
+                android:hint="Tanggal"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@color/black"
+                android:textSize="12dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TanggalRapatPerdanaTambah"
+                android:id="@+id/txViewTempatPelaksanaan"
+                android:text="Tempat Pelaksanaan"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:textSize="12dp"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txViewTempatPelaksanaan"
+                android:ems="10"
+                android:id="@+id/TempatPelaksanaanTambah"
+                android:hint="Tempat Pelaksanaan"
+                android:fontFamily="@font/montserrat"
+                android:textSize="12dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txViewTempatRapatPerdana"
+                android:layout_below="@+id/TempatPelaksanaanTambah"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="Tempat Rapat Perdana"
+                android:textSize="12dp"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/TempatRapatPerdanaTambah"
+                android:layout_below="@+id/txViewTempatRapatPerdana"
+                android:ems="10"
+                android:fontFamily="@font/montserrat"
+                android:textSize="12dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:hint="Tempat Rapat Perdana"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txViewDeskripsi"
+                android:layout_below="@+id/TempatRapatPerdanaTambah"
+                android:text="Deskripsi Kepanitiaan"
+                android:fontFamily="@font/montserrat_bold"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/DeskripsiTambah"
+                android:layout_below="@+id/txViewDeskripsi"
+                android:ems="10"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="@font/montserrat"
+                android:textSize="12dp"
+                android:hint="Deskripsi"
+                android:textColor="@color/black"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

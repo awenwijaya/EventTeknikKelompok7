@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="3dp"
+    app:cardCornerRadius="3dp"
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="@color/white"
+    app:contentPadding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayoutInti"
+        android:layout_gravity="center_vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+                <TextView
+                    android:text="Nama Ketua: "
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"/>
+                <TextView
+                    android:id="@+id/NamaKetuaList"
+                    android:fontFamily="@font/montserrat"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Ketua"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Nama Wakil Ketua: "
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"/>
+                <TextView
+                    android:id="@+id/NamaWakilKetuaList"
+                    android:fontFamily="@font/montserrat"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Wakil Ketua"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Nama Sekretaris: "
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"/>
+                <TextView
+                    android:id="@+id/NamaSekretarisList"
+                    android:fontFamily="@font/montserrat"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Sekretaris"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Nama Bendahara: "
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"/>
+                <TextView
+                    android:id="@+id/NamaBendaharaList"
+                    android:fontFamily="@font/montserrat"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Bendahara"/>
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

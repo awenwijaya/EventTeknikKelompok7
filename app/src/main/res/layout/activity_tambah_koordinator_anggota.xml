@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TambahKoordinatorAnggotaActivity">
+
+    <ImageButton
+        android:id="@+id/btnBackTambahDivisi"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/back" />
+
+    <TextView
+        android:id="@+id/judulDivisi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@id/btnBackTambahDivisi"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Add"
+        android:textAlignment="viewStart"
+        android:textColor="#000000"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btnSimpanTambahDivisi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/judulDivisi"
+        android:layout_marginLeft="30sp"
+        android:layout_marginTop="10sp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="SAVE"
+        android:textSize="12dp" />
+
+    <Button
+        android:id="@+id/btnBatalTambahDivisi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/judulDivisi"
+        android:layout_marginLeft="30sp"
+        android:layout_marginTop="10sp"
+        android:layout_toRightOf="@+id/btnSimpanTambahDivisi"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="@android:color/holo_red_light"
+        android:text="CANCEL"
+        android:textSize="12dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btnSimpanTambahDivisi"
+        android:id="@+id/ScrollViewTambahDivisi"
+        android:layout_marginTop="15sp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/txViewTambahNamaDivisi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:textSize="12dp"
+                android:layout_marginLeft="10dp"
+                android:text="Divisi"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:ems="10"
+                android:layout_marginTop="5sp"
+                android:textSize="12dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:hint="Nama Divisi"
+                android:id="@+id/TambahNamaDivisi"
+                android:layout_below="@+id/txViewTambahNamaDivisi"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_below="@+id/TambahNamaDivisi"
+                android:text="Coordinator"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="12dp"
+                android:textColor="@color/black"
+                android:id="@+id/txViewTambahNamaKoordinator"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:ems="10"
+                android:layout_below="@+id/txViewTambahNamaKoordinator"
+                android:hint="Nama Coordinator"
+                android:textSize="12dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5sp"
+                android:textColor="@color/black"
+                android:id="@+id/TambahNamaKoordinator"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_below="@+id/TambahNamaKoordinator"
+                android:id="@+id/txViewTambahJumlahAnggota"
+                android:text="Jumlah Anggota"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="12dp"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_below="@+id/txViewTambahJumlahAnggota"
+                android:id="@+id/JumlahAnggota"
+                android:layout_marginTop="5sp"
+                android:layout_marginLeft="10dp"
+                android:hint="Nama Sekretaris"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@color/black"
+                android:textSize="12dp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/judul"
+        android:layout_below="@+id/imageView"
+        android:text="Welcome!"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/montserrat_bold"
+        android:textSize="35dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/keterangan"
+        android:text="Sign in before continue use the app"
+        android:layout_below="@+id/judul"
+        android:layout_marginLeft="40dp"
+        android:fontFamily="@font/montserrat"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:layout_below="@+id/keterangan"
+        android:id="@+id/textEmailLogin"
+        android:fontFamily="@font/montserrat_bold"
+        android:layout_marginTop="40dp"
+        android:textSize="15dp"
+        android:layout_marginLeft="40dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textEmailLogin"
+        android:id="@+id/EmailLogin"
+        android:ems="10"
+        android:layout_marginLeft="40dp"
+        android:fontFamily="@font/montserrat"
+        android:hint="Email"
+        android:textSize="15dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:id="@+id/textPassword"
+        android:layout_below="@+id/EmailLogin"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:textSize="15dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/textPassword"
+        android:inputType="textPassword"
+        android:id="@+id/PasswordLogin"
+        android:layout_marginLeft="40dp"
+        android:textSize="15dp"
+        android:fontFamily="@font/montserrat"
+        android:hint="Password"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_marginTop="55dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/logo" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnLoginlogin"
+        android:text="LOGIN"
+        android:fontFamily="@font/montserrat_bold"
+        android:layout_below="@+id/PasswordLogin"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp"
+        android:background="@android:color/transparent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account?"
+        android:layout_below="@+id/btnLoginlogin"
+        android:id="@+id/textAccount"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:fontFamily="@font/montserrat"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnRegisterlogin"
+        android:text="REGISTER"
+        android:fontFamily="@font/montserrat_bold"
+        android:background="@android:color/transparent"
+        android:layout_below="@+id/btnLoginlogin"
+        android:layout_toRightOf="@+id/textAccount"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"/>
+
+
+</RelativeLayout>

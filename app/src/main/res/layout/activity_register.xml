@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Register Account"
+        android:textColor="@color/black"
+        android:textSize="35dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/keterangan"
+        android:text="Please fill the field"
+        android:layout_below="@+id/judul"
+        android:layout_marginLeft="40dp"
+        android:fontFamily="@font/montserrat"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"/>
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Full Name"
+       android:layout_below="@+id/keterangan"
+       android:id="@+id/textNamaRegister"
+       android:fontFamily="@font/montserrat_bold"
+       android:layout_marginTop="20dp"
+       android:textSize="15dp"
+       android:layout_marginLeft="40dp"
+       android:textColor="@color/black"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textNamaRegister"
+        android:id="@+id/NamaRegister"
+        android:ems="10"
+        android:layout_marginLeft="40dp"
+        android:fontFamily="@font/montserrat"
+        android:hint="Full Name"
+        android:textSize="15dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:layout_below="@+id/NamaRegister"
+        android:id="@+id/textEmailRegister"
+        android:fontFamily="@font/montserrat_bold"
+        android:layout_marginTop="10dp"
+        android:textSize="15dp"
+        android:layout_marginLeft="40dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textEmailRegister"
+        android:id="@+id/EmailRegister"
+        android:ems="10"
+        android:layout_marginLeft="40dp"
+        android:fontFamily="@font/montserrat"
+        android:hint="Email"
+        android:textSize="15dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:id="@+id/textPassword"
+        android:layout_below="@+id/EmailRegister"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:textSize="15dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/textPassword"
+        android:id="@+id/PasswordRegister"
+        android:inputType="textPassword"
+        android:layout_marginLeft="40dp"
+        android:textSize="15dp"
+        android:fontFamily="@font/montserrat"
+        android:hint="Password"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password Confirmation"
+        android:id="@+id/textPasswordConfirm"
+        android:layout_below="@+id/PasswordRegister"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:textSize="15dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/textPasswordConfirm"
+        android:id="@+id/PasswordConfirmRegister"
+        android:layout_marginLeft="40dp"
+        android:textSize="15dp"
+        android:fontFamily="@font/montserrat"
+        android:inputType="textPassword"
+        android:hint="Password"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnRegisterregister"
+        android:text="REGISTER"
+        android:fontFamily="@font/montserrat_bold"
+        android:layout_below="@+id/PasswordConfirmRegister"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="40dp"
+        android:background="@android:color/transparent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account?"
+        android:layout_below="@+id/btnRegisterregister"
+        android:id="@+id/textAccount"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="40dp"
+        android:fontFamily="@font/montserrat"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnLoginregister"
+        android:text="LOGIN"
+        android:fontFamily="@font/montserrat_bold"
+        android:background="@android:color/transparent"
+        android:layout_below="@+id/btnRegisterregister"
+        android:layout_toRightOf="@+id/textAccount"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="5dp"/>
+
+</RelativeLayout>
