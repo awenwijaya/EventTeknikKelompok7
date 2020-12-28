@@ -4,8 +4,10 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
@@ -26,7 +28,9 @@ public class EditPanitiaIntiActivity extends AppCompatActivity {
     private Button tambah, batal;
     private ImageButton kembali;
     SQLiteHelper helper;
-    private String id, nama_ketua, nama_wakil, nama_bendahara, nama_sekretaris;
+    private String id, nama_ketua, nama_wakil, nama_bendahara, nama_sekretaris, id_event;
+    SharedPreferences editpref;
+    Context context;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +43,9 @@ public class EditPanitiaIntiActivity extends AppCompatActivity {
         tambah = findViewById(R.id.btnSimpanEditInti);
         batal = findViewById(R.id.btnBatalEditInti);
         kembali = findViewById(R.id.btnBackEditInti);
+        editpref = getSharedPreferences("pref", Context.MODE_PRIVATE);
+        id_event = editpref.getString("event_id", " ");
+        context = EditPanitiaIntiActivity.this;
         helper = new SQLiteHelper(this);
 
         Bundle bundle = getIntent().getExtras();
@@ -96,7 +103,8 @@ public class EditPanitiaIntiActivity extends AppCompatActivity {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 Intent home = new Intent(EditPanitiaIntiActivity.this, IntiPanitiaActivity.class);
-                                startActivity(home);
+                                home.putExtra("event_id", id_event);
+                                context.startActivity(home);
                             }
                         })
                         .setNegativeButton("No", new DialogInterface.OnClickListener() {
@@ -113,7 +121,8 @@ public class EditPanitiaIntiActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent kembali = new Intent(EditPanitiaIntiActivity.this, IntiPanitiaActivity.class);
-                startActivity(kembali);
+                kembali.putExtra("event_id", id_event);
+                context.startActivity(kembali);
             }
         });
 

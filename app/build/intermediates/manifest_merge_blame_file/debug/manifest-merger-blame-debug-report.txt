@@ -26,58 +26,59 @@
 18-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:9:9-54
 19        android:supportsRtl="true"
 19-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:10:9-35
-20        android:theme="@style/Theme.EventTeknik.TransparentTheme" >
-20-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:11:9-66
-21        <activity android:name="com.progmoblanjut.eventteknik.TambahKoordinatorAnggotaActivity" />
-21-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:12:9-69
-21-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:12:19-67
-22        <activity android:name="com.progmoblanjut.eventteknik.EditKoordinatorAnggotaActivity" />
-22-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:13:9-67
-22-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:13:19-65
-23        <activity android:name="com.progmoblanjut.eventteknik.TambahPanitiaIntiActivity" />
-23-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:14:9-72
-23-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:14:19-60
-24        <activity android:name="com.progmoblanjut.eventteknik.EditPanitiaIntiActivity" />
-24-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:15:9-61
-24-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:15:19-58
-25        <activity android:name="com.progmoblanjut.eventteknik.KoordinatorAnggotaActivity" />
-25-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:16:9-64
-25-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:16:19-61
-26        <activity android:name="com.progmoblanjut.eventteknik.IntiPanitiaActivity" />
-26-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:17:9-57
-26-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:17:19-54
-27        <activity android:name="com.progmoblanjut.eventteknik.PanitiaActivity" />
-27-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:18:9-53
-27-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:18:19-50
-28        <activity android:name="com.progmoblanjut.eventteknik.StartActivity" >
-28-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:19:9-25:20
-28-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:19:19-48
-29            <intent-filter>
-29-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:20:13-24:29
-30                <action android:name="android.intent.action.MAIN" />
-30-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:21:17-69
-30-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:21:25-66
-31
-32                <category android:name="android.intent.category.LAUNCHER" />
-32-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:23:17-77
-32-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:23:27-74
-33            </intent-filter>
-34        </activity>
-35        <activity android:name="com.progmoblanjut.eventteknik.LoginActivity" />
-35-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:26:9-51
-35-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:26:19-48
-36        <activity android:name="com.progmoblanjut.eventteknik.RegisterActivity" />
-36-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:27:9-54
-36-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:27:19-51
-37        <activity android:name="com.progmoblanjut.eventteknik.EditEventActivity" />
-37-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:28:9-55
-37-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:28:19-52
-38        <activity android:name="com.progmoblanjut.eventteknik.TambahEventActivity" />
-38-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:29:9-57
-38-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:29:19-54
-39        <activity android:name="com.progmoblanjut.eventteknik.MainActivity" />
-39-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:30:9-50
-39-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:30:19-47
-40    </application>
-41
-42</manifest>
+20        android:testOnly="true"
+21        android:theme="@style/Theme.EventTeknik.TransparentTheme" >
+21-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:11:9-66
+22        <activity android:name="com.progmoblanjut.eventteknik.TambahKoordinatorAnggotaActivity" />
+22-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:12:9-69
+22-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:12:19-67
+23        <activity android:name="com.progmoblanjut.eventteknik.EditKoordinatorAnggotaActivity" />
+23-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:13:9-67
+23-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:13:19-65
+24        <activity android:name="com.progmoblanjut.eventteknik.TambahPanitiaIntiActivity" />
+24-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:14:9-72
+24-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:14:19-60
+25        <activity android:name="com.progmoblanjut.eventteknik.EditPanitiaIntiActivity" />
+25-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:15:9-61
+25-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:15:19-58
+26        <activity android:name="com.progmoblanjut.eventteknik.KoordinatorAnggotaActivity" />
+26-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:16:9-64
+26-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:16:19-61
+27        <activity android:name="com.progmoblanjut.eventteknik.IntiPanitiaActivity" />
+27-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:17:9-57
+27-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:17:19-54
+28        <activity android:name="com.progmoblanjut.eventteknik.PanitiaActivity" />
+28-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:18:9-53
+28-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:18:19-50
+29        <activity android:name="com.progmoblanjut.eventteknik.StartActivity" >
+29-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:19:9-25:20
+29-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:19:19-48
+30            <intent-filter>
+30-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:20:13-24:29
+31                <action android:name="android.intent.action.MAIN" />
+31-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:21:17-69
+31-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:21:25-66
+32
+33                <category android:name="android.intent.category.LAUNCHER" />
+33-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:23:17-77
+33-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:23:27-74
+34            </intent-filter>
+35        </activity>
+36        <activity android:name="com.progmoblanjut.eventteknik.LoginActivity" />
+36-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:26:9-51
+36-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:26:19-48
+37        <activity android:name="com.progmoblanjut.eventteknik.RegisterActivity" />
+37-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:27:9-54
+37-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:27:19-51
+38        <activity android:name="com.progmoblanjut.eventteknik.EditEventActivity" />
+38-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:28:9-55
+38-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:28:19-52
+39        <activity android:name="com.progmoblanjut.eventteknik.TambahEventActivity" />
+39-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:29:9-57
+39-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:29:19-54
+40        <activity android:name="com.progmoblanjut.eventteknik.MainActivity" />
+40-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:30:9-50
+40-->C:\Users\awenh\Documents\College Stuffs\5th Semester MDI\Pemrograman Mobile Lanjutan\progmob fix\tubes-progmob-event-teknik-master\app\src\main\AndroidManifest.xml:30:19-47
+41    </application>
+42
+43</manifest>

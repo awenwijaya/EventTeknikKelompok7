@@ -1,6 +1,7 @@
 package com.progmoblanjut.eventteknik;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
@@ -26,6 +27,7 @@ public class TambahKoordinatorAnggotaActivity extends AppCompatActivity {
     private ImageButton kembali;
     private String eventID;
     SQLiteHelper helper;
+    Context context;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +39,7 @@ public class TambahKoordinatorAnggotaActivity extends AppCompatActivity {
         batal = (Button) findViewById(R.id.btnBatalTambahDivisi);
         tambah = (Button) findViewById(R.id.btnSimpanTambahDivisi);
         kembali = (ImageButton) findViewById(R.id.btnBackTambahDivisi);
+        context = TambahKoordinatorAnggotaActivity.this;
         Bundle bundle = getIntent().getExtras();
         if(bundle!=null) {
             eventID = bundle.getString("event_id");
@@ -78,7 +81,8 @@ public class TambahKoordinatorAnggotaActivity extends AppCompatActivity {
                                     @Override
                                     public void onClick(DialogInterface dialog, int which) {
                                         Intent koor = new Intent(TambahKoordinatorAnggotaActivity.this, KoordinatorAnggotaActivity.class);
-                                        startActivity(koor);
+                                        koor.putExtra("event_id", eventID);
+                                        context.startActivity(koor);
                                     }
                                 });
                         builder.show();
@@ -101,7 +105,8 @@ public class TambahKoordinatorAnggotaActivity extends AppCompatActivity {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 Intent home = new Intent(TambahKoordinatorAnggotaActivity.this, KoordinatorAnggotaActivity.class);
-                                startActivity(home);
+                                home.putExtra("event_id", eventID);
+                                context.startActivity(home);
                             }
                         })
                         .setNegativeButton("No", new DialogInterface.OnClickListener() {
@@ -118,7 +123,8 @@ public class TambahKoordinatorAnggotaActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent kembali = new Intent(TambahKoordinatorAnggotaActivity.this, KoordinatorAnggotaActivity.class);
-                startActivity(kembali);
+                kembali.putExtra("event_id", eventID);
+                context.startActivity(kembali);
             }
         });
 

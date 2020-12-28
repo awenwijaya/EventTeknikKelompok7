@@ -1,7 +1,9 @@
 package com.progmoblanjut.eventteknik;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.graphics.Color;
 import android.os.Build;
@@ -27,7 +29,8 @@ public class IntiPanitiaActivity extends AppCompatActivity {
     private IntiAdapter adapter;
     ArrayList<DataPanitiaInti> list = new ArrayList<>();
     private SQLiteHelper helper;
-    String eventID;
+    String eventID, id_event;
+    SharedPreferences pref;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,10 +39,15 @@ public class IntiPanitiaActivity extends AppCompatActivity {
         tambah = (FloatingActionButton) findViewById(R.id.FABTambahInti);
         listView = (ListView) findViewById(R.id.listViewPanitiaInti);
         helper = new SQLiteHelper(IntiPanitiaActivity.this);
+        pref = getSharedPreferences("pref", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = pref.edit();
         Bundle bundle = getIntent().getExtras();
         if(bundle!=null) {
             eventID = bundle.getString("event_id");
+            editor.putString("event_id", eventID);
+            editor.apply();
         }
+        id_event = pref.getString("id_event", " ");
 
         tambah.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -71,9 +79,9 @@ public class IntiPanitiaActivity extends AppCompatActivity {
         win.setAttributes(winParams);
     }
 
-    private void menampilkanData(String eventID) {
+    private void menampilkanData(String id_event) {
         list.clear();
-        Cursor res = helper.getDataInti(eventID);
+        Cursor res = helper.getDataInti(id_event);
         while(res.moveToNext()) {
             String id = res.getString(0);
             String nama_ketuaacara = res.getString(1);

@@ -82,6 +82,7 @@ public class IntiAdapter extends BaseAdapter {
                                     Integer isDelete = helper.deleteInti(listInti.get(position).getId_inti());
                                     if(isDelete > 0) {
                                         Toast.makeText(context, "Successfully deleted!", Toast.LENGTH_SHORT).show();
+                                        notifyDataSetChanged();
                                     } else {
                                         Toast.makeText(context, "Failed!", Toast.LENGTH_SHORT).show();
                                     }

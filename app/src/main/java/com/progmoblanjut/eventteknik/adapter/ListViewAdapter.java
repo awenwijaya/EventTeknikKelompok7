@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -28,7 +29,7 @@ public class ListViewAdapter extends BaseAdapter {
     private TextView nama, tanggal, tanggalRapatPerdana, tempat, tempatRapatPerdana, deskripsi;
     private LinearLayout layout;
     private SQLiteHelper helper;
-
+    SharedPreferences sharedPreferences;
     public ListViewAdapter(List<DataEventKepanitiaan> listKepanitiaan, Context context) {
         this.listKepanitiaan = listKepanitiaan;
         this.context = context;

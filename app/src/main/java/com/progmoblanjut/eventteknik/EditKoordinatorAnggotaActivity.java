@@ -1,8 +1,10 @@
 package com.progmoblanjut.eventteknik;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
@@ -25,7 +27,9 @@ public class EditKoordinatorAnggotaActivity extends AppCompatActivity {
     private Button tambah, batal;
     private ImageButton kembali;
     SQLiteHelper helper;
-    private String id, nama_divisi, nama_koordinator, jml_anggota;
+    private String id, nama_divisi, nama_koordinator, jml_anggota, id_event;
+    SharedPreferences editpref;
+    Context context;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +41,9 @@ public class EditKoordinatorAnggotaActivity extends AppCompatActivity {
         tambah = findViewById(R.id.btnSimpanEditDivisi);
         batal = findViewById(R.id.btnBatalEditDivisi);
         kembali = findViewById(R.id.btnBackEditDivisi);
+        editpref = getSharedPreferences("pref", Context.MODE_PRIVATE);
+        id_event = editpref.getString("id_event", " ");
+        context = EditKoordinatorAnggotaActivity.this;
         helper = new SQLiteHelper(this);
 
         Bundle bundle = getIntent().getExtras();
@@ -88,7 +95,8 @@ public class EditKoordinatorAnggotaActivity extends AppCompatActivity {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 Intent home = new Intent(EditKoordinatorAnggotaActivity.this, KoordinatorAnggotaActivity.class);
-                                startActivity(home);
+                                home.putExtra("event_id", id_event);
+                                context.startActivity(home);
                             }
                         })
                         .setNegativeButton("No", new DialogInterface.OnClickListener() {
@@ -105,7 +113,8 @@ public class EditKoordinatorAnggotaActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent kembali = new Intent(EditKoordinatorAnggotaActivity.this, KoordinatorAnggotaActivity.class);
-                startActivity(kembali);
+                kembali.putExtra("event_id", id_event);
+                context.startActivity(kembali);
             }
         });
 

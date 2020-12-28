@@ -4,8 +4,10 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.database.Cursor;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
@@ -27,6 +29,7 @@ public class TambahPanitiaIntiActivity extends AppCompatActivity {
     private ImageButton kembali;
     private String eventID;
     SQLiteHelper helper;
+    Context context;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +40,7 @@ public class TambahPanitiaIntiActivity extends AppCompatActivity {
         sekretaris = findViewById(R.id.NamaSekretaris);
         bendahara = findViewById(R.id.NamaBendahara);
         batal = (Button) findViewById(R.id.btnBatalPanitiaInti);
+        Context context = TambahPanitiaIntiActivity.this;
         tambah = (Button) findViewById(R.id.btnSimpanPanitiaInti);
         kembali = (ImageButton) findViewById(R.id.btnBackPanitiaInti);
         Bundle bundle = getIntent().getExtras();
@@ -85,7 +89,8 @@ public class TambahPanitiaIntiActivity extends AppCompatActivity {
                                     @Override
                                     public void onClick(DialogInterface dialog, int which) {
                                         Intent home = new Intent(TambahPanitiaIntiActivity.this, IntiPanitiaActivity.class);
-                                        startActivity(home);
+                                        home.putExtra("event_id", eventID);
+                                        context.startActivity(home);
                                     }
                                 });
                         builder.show();
@@ -108,7 +113,8 @@ public class TambahPanitiaIntiActivity extends AppCompatActivity {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 Intent home = new Intent(TambahPanitiaIntiActivity.this, IntiPanitiaActivity.class);
-                                startActivity(home);
+                                home.putExtra("event_id", eventID);
+                                context.startActivity(home);
                             }
                         })
                         .setNegativeButton("No", new DialogInterface.OnClickListener() {
@@ -125,7 +131,8 @@ public class TambahPanitiaIntiActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent kembali = new Intent(TambahPanitiaIntiActivity.this, IntiPanitiaActivity.class);
-                startActivity(kembali);
+                kembali.putExtra("event_id", eventID);
+                context.startActivity(kembali);
             }
         });
 

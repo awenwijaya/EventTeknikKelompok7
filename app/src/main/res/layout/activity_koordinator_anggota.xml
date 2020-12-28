@@ -7,20 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".KoordinatorAnggotaActivity">
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/FABTambahDivisi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@android:color/transparent"
-        android:clickable="true"
-        app:backgroundTint="#FFFFFF"
-        app:srcCompat="@drawable/addlogo"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginBottom="60dp"
-        android:layout_marginRight="20dp"
-        />
-
     <TextView
         android:id="@+id/judulDivisi"
         android:layout_width="wrap_content"
@@ -45,13 +31,28 @@
         android:textColor="@color/black"
         android:textSize="20sp" />
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/FABTambahDivisi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        app:backgroundTint="#FFFFFF"
+        app:srcCompat="@drawable/addlogo"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="60dp"
+        android:layout_marginRight="20dp"/>
+
     <ListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/listViewDivisi"
         android:layout_below="@+id/desc"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="15dp"/>
+        android:layout_marginLeft="15dp">
+
+    </ListView>
 
 
 </RelativeLayout>

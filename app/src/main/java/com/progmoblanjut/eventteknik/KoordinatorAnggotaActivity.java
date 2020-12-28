@@ -3,7 +3,9 @@ package com.progmoblanjut.eventteknik;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.graphics.Color;
 import android.os.Build;
@@ -28,6 +30,7 @@ public class KoordinatorAnggotaActivity extends AppCompatActivity {
     ArrayList<DataDivisi> list = new ArrayList<>();
     private SQLiteHelper helper;
     String eventID;
+    SharedPreferences pref;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,10 +38,14 @@ public class KoordinatorAnggotaActivity extends AppCompatActivity {
         setContentView(R.layout.activity_koordinator_anggota);
         tambah = (FloatingActionButton) findViewById(R.id.FABTambahDivisi);
         listView = (ListView) findViewById(R.id.listViewDivisi);
+        pref = getSharedPreferences("pref", Context.MODE_PRIVATE);
         helper = new SQLiteHelper(KoordinatorAnggotaActivity.this);
         Bundle bundle = getIntent().getExtras();
         if(bundle!=null) {
             eventID = bundle.getString("event_id");
+            SharedPreferences.Editor editor = pref.edit();
+            editor.putString("id_event", eventID);
+            editor.apply();
         }
         tambah.setOnClickListener(new View.OnClickListener() {
             @Override

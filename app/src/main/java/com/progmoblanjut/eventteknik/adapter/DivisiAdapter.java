@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,6 +16,7 @@ import android.widget.Toast;
 import com.progmoblanjut.eventteknik.EditKoordinatorAnggotaActivity;
 import com.progmoblanjut.eventteknik.R;
 import com.progmoblanjut.eventteknik.sql.DataDivisi;
+import com.progmoblanjut.eventteknik.sql.DataEventKepanitiaan;
 import com.progmoblanjut.eventteknik.sql.SQLiteHelper;
 
 import java.util.List;
@@ -78,6 +80,7 @@ public class DivisiAdapter extends BaseAdapter{
                                     Integer isDelete = helper.deleteDivisi(listDivisi.get(position).getId_divisi());
                                     if(isDelete > 0) {
                                         Toast.makeText(context, "Successfully deleted!", Toast.LENGTH_SHORT).show();
+                                        notifyDataSetChanged();
                                     } else {
                                         Toast.makeText(context, "Failed!", Toast.LENGTH_SHORT).show();
                                     }

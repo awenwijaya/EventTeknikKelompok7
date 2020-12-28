@@ -12,7 +12,6 @@ public class PanitiaActivity extends AppCompatActivity {
 
     ImageButton kembali, inti, anggota;
     String eventID;
-    Context context;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
